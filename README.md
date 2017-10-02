@@ -89,24 +89,24 @@ set LC_ALL variable to 'C' and add `export LC_ALL='C` it to ~/.bashrc file.
 
 
 	<VirtualHost *:80>
-		 ServerName <IP Address> 
-		 ServerAdmin <Email Address> 
-		 #Location of the items-catalog WSGI file
-		 WSGIScriptAlias / /var/www/Catalog/catalog.wsgi
-		 #Allow Apache to serve the WSGI app from our catalog directory
-		 <Directory /var/www/Catalog/Catalog>
-		      Order allow,deny
-		      Allow from all
-		 </Directory>
-		 #Allow Apache to deploy static content
-		 Alias /static /var/www/Catalog/Catalog/static
-		 <Directory /var/www/Catalog/Catalog/static>
-		    Order allow,deny
-		    Allow from all
-		 </Directory>
-		  ErrorLog ${APACHE_LOG_DIR}/error.log
-		  LogLevel warn
-		  CustomLog ${APACHE_LOG_DIR}/access.log combined
+	     ServerName <IP Address> 
+	     ServerAdmin <Email Address> 
+	     #Location of the items-catalog WSGI file
+	     WSGIScriptAlias / /var/www/Catalog/catalog.wsgi
+	     #Allow Apache to serve the WSGI app from our catalog directory
+	     <Directory /var/www/Catalog/Catalog>
+	          Order allow,deny
+	          Allow from all
+	     </Directory>
+	     #Allow Apache to deploy static content
+	     Alias /static /var/www/Catalog/Catalog/static
+	     <Directory /var/www/Catalog/Catalog/static>
+	        Order allow,deny
+	        Allow from all
+	     </Directory>
+	      ErrorLog ${APACHE_LOG_DIR}/error.log
+	      LogLevel warn
+	      CustomLog ${APACHE_LOG_DIR}/access.log combined
 	</VirtualHost>
 
 # How to run the application
