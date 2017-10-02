@@ -113,6 +113,12 @@ set LC_ALL variable to 'C' and add `export LC_ALL='C` it to ~/.bashrc file.
 * Reload the apache `sudo service apache2 reload`
 * Open the any web browser and navigate to `http://<ip address>`
 
+# Accessing my hosted application
+* Open any web browser
+* [Click Here](http://52.66.109.71/) to visit.
+* To launch ssh connection use `ssh grader@52.66.109.71 -p 3823`
+* To request password or keys [click here](mailto:deepak3823@gmail.com)
+
 
 # Credits
 * [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
