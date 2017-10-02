@@ -88,6 +88,7 @@ set LC_ALL variable to 'C' and add `export LC_ALL='C` it to ~/.bashrc file.
 * Paste the below contents:
 
 
+
 	<VirtualHost *:80>
 	     ServerName <IP Address> 
 	     ServerAdmin <Email Address> 
@@ -108,6 +109,7 @@ set LC_ALL variable to 'C' and add `export LC_ALL='C` it to ~/.bashrc file.
 	      LogLevel warn
 	      CustomLog ${APACHE_LOG_DIR}/access.log combined
 	</VirtualHost>
+
 
 # How to run the application
 * Reload the apache `sudo service apache2 reload`
